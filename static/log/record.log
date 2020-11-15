@@ -1,0 +1,266 @@
+[2020-07-04 18:30:55,375] [INFO] "GET /v1/MyRab/test_rab/ HTTP/1.1" 200 517
+[2020-07-04 18:33:27,429] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-04 18:38:58,603] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 87
+[2020-07-04 18:40:31,404] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 87
+[2020-07-04 19:19:00,263] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 87
+[2020-07-04 19:54:47,036] [ERROR] Internal Server Error: /v1/MyRab/test_rab/
+Traceback (most recent call last):
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\utils\log.py", line 92, in emit
+    request = record.request
+AttributeError: 'LogRecord' object has no attribute 'request'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\MyRabbit\MyRab\views.py", line 43, in create
+    sendtoparse_one(data)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\MyRabbit\MyRab\views.py", line 50, in sendtoparse_one
+    logger.info("AduitOneParseView", "开始发送消息到算法端:data:{}".format(str(data)))
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1332, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1468, in _log
+    self.handle(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1478, in handle
+    self.callHandlers(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1540, in callHandlers
+    hdlr.handle(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 854, in handle
+    self.emit(record)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\utils\log.py", line 102, in emit
+    record.getMessage()
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 331, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+[2020-07-04 19:54:47,159] [ERROR] "POST /v1/MyRab/test_rab/ HTTP/1.1" 500 20638
+[2020-07-04 19:55:46,762] [ERROR] Internal Server Error: /v1/MyRab/test_rab/
+Traceback (most recent call last):
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\utils\log.py", line 92, in emit
+    request = record.request
+AttributeError: 'LogRecord' object has no attribute 'request'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\MyRabbit\MyRab\views.py", line 43, in create
+    sendtoparse_one(data)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\MyRabbit\MyRab\views.py", line 50, in sendtoparse_one
+    # logger.info("AduitOneParseView", "开始发送消息到算法端:data:{}".format(str(data)))
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1332, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1468, in _log
+    self.handle(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1478, in handle
+    self.callHandlers(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1540, in callHandlers
+    hdlr.handle(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 854, in handle
+    self.emit(record)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\myvenv\lib\site-packages\django\utils\log.py", line 102, in emit
+    record.getMessage()
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 331, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+[2020-07-04 19:55:46,845] [ERROR] "POST /v1/MyRab/test_rab/ HTTP/1.1" 500 20640
+[2020-07-04 19:56:07,569] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 87
+[2020-07-04 19:58:50,837] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 87
+[2020-07-04 20:06:59,980] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 87
+[2020-07-05 13:06:02,577] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 86
+[2020-07-05 13:07:07,263] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 87
+[2020-07-05 13:09:50,187] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 87
+[2020-07-05 13:12:41,220] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 90
+[2020-07-05 13:14:30,581] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 87
+[2020-07-05 13:15:11,952] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 87
+[2020-07-05 13:18:52,821] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 86
+[2020-07-05 13:21:06,200] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 86
+[2020-07-05 13:25:18,874] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 86
+[2020-07-05 13:25:32,516] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 86
+[2020-07-05 13:27:20,050] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 86
+[2020-07-05 13:28:07,389] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 86
+[2020-07-05 13:28:35,738] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 86
+[2020-07-05 13:29:33,571] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 86
+[2020-07-05 13:31:17,815] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 86
+[2020-07-05 13:37:10,343] [WARNING] "POST /v1/MyRab/my_class/ HTTP/1.1" 401 61
+[2020-07-05 13:37:45,370] [WARNING] "POST /v1/MyRab/my_class/ HTTP/1.1" 401 61
+[2020-07-05 13:38:17,004] [INFO] "POST /v1/MyRab/my_class/ HTTP/1.1" 201 98
+[2020-07-05 14:02:51,830] [INFO] "POST /v1/MyRab/my_class/ HTTP/1.1" 201 98
+[2020-07-05 15:03:38,269] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-05 15:08:32,290] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-05 15:09:40,368] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-05 15:10:41,488] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-05 15:12:37,255] [INFO] "POST /v1/MyRab/my_class/ HTTP/1.1" 201 94
+[2020-07-05 15:12:45,262] [INFO] "POST /v1/MyRab/my_class/ HTTP/1.1" 201 91
+[2020-07-05 15:13:02,473] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-05 15:25:28,653] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-05 15:25:58,794] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-05 15:26:49,638] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-05 15:27:42,724] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-05 15:28:18,873] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-05 15:32:58,114] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
+[2020-07-05 15:41:50,926] [ERROR] Internal Server Error: /v1/MyRab/test_rab/
+Traceback (most recent call last):
+  File "D:\Ruanjian\install\lib\site-packages\django\utils\log.py", line 92, in emit
+    request = record.request
+AttributeError: 'LogRecord' object has no attribute 'request'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Ruanjian\install\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Ruanjian\install\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Ruanjian\install\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Ruanjian\install\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\MyRabbit\MyRab\views.py", line 43, in create
+    student_mq(data)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\MyRabbit\MyRab\views.py", line 61, in student_mq
+    logger.info("AduitOneParseView", "开始发送消息到算法端:data:{}".format(str(data)))
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1332, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1468, in _log
+    self.handle(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1478, in handle
+    self.callHandlers(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1540, in callHandlers
+    hdlr.handle(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 854, in handle
+    self.emit(record)
+  File "D:\Ruanjian\install\lib\site-packages\django\utils\log.py", line 102, in emit
+    record.getMessage()
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 331, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+[2020-07-05 15:41:55,981] [ERROR] "POST /v1/MyRab/test_rab/ HTTP/1.1" 500 18987
+[2020-07-05 15:43:22,183] [ERROR] Internal Server Error: /v1/MyRab/test_rab/
+Traceback (most recent call last):
+  File "D:\Ruanjian\install\lib\site-packages\django\utils\log.py", line 92, in emit
+    request = record.request
+AttributeError: 'LogRecord' object has no attribute 'request'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Ruanjian\install\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Ruanjian\install\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Ruanjian\install\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Ruanjian\install\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\MyRabbit\MyRab\views.py", line 43, in create
+    student_mq(data)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\MyRabbit\MyRab\views.py", line 61, in student_mq
+    logger.info("AduitOneParseView", "开始发送消息到算法端")
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1332, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1468, in _log
+    self.handle(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1478, in handle
+    self.callHandlers(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1540, in callHandlers
+    hdlr.handle(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 854, in handle
+    self.emit(record)
+  File "D:\Ruanjian\install\lib\site-packages\django\utils\log.py", line 102, in emit
+    record.getMessage()
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 331, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+[2020-07-05 15:43:22,359] [ERROR] "POST /v1/MyRab/test_rab/ HTTP/1.1" 500 18961
+[2020-07-05 15:44:34,864] [ERROR] Internal Server Error: /v1/MyRab/test_rab/
+Traceback (most recent call last):
+  File "D:\Ruanjian\install\lib\site-packages\django\utils\log.py", line 92, in emit
+    request = record.request
+AttributeError: 'LogRecord' object has no attribute 'request'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Ruanjian\install\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\Ruanjian\install\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Ruanjian\install\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Ruanjian\install\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Ruanjian\install\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\MyRabbit\MyRab\views.py", line 43, in create
+    student_mq(data)
+  File "D:\python基础课程\Ryan_Project\MyRabbit\MyRabbit\MyRab\views.py", line 61, in student_mq
+    # logger.info("AduitOneParseView", "开始发送消息到算法端")
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1332, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1468, in _log
+    self.handle(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1478, in handle
+    self.callHandlers(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 1540, in callHandlers
+    hdlr.handle(record)
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 854, in handle
+    self.emit(record)
+  File "D:\Ruanjian\install\lib\site-packages\django\utils\log.py", line 102, in emit
+    record.getMessage()
+  File "D:\Ruanjian\install\lib\logging\__init__.py", line 331, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+[2020-07-05 15:44:34,993] [ERROR] "POST /v1/MyRab/test_rab/ HTTP/1.1" 500 18963
+[2020-07-05 15:45:03,381] [INFO] "POST /v1/MyRab/test_rab/ HTTP/1.1" 201 88
